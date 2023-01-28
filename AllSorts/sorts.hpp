@@ -7,6 +7,8 @@ void random(int*, int);
 
 void print(int*, int);
 
+void swap(int&, int&);
+
 int search(int*, int);
 
 bool check(int*, int);
@@ -23,6 +25,6 @@ void insertionSort(int*, int);
 
 void countSort(int*, int*, int);
 
-
+void randomFill(int*, int, int, int);
 
 #endif // SORT_HPP

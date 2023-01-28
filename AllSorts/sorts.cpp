@@ -30,6 +30,14 @@ int search(int *ar, int size, int i){
 }
 
 
+void swap(int &a,int  &b){
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+
+
 void selectionSort(int *ar, int size){
         for(int i = 0; i < size; i++){
                 swap(ar[i], ar[search(ar, size, i)]);
