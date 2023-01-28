@@ -3,6 +3,13 @@
 
 
 int main(){
+	std::cout << "Bubble Sort" << std::endl;
+	int ar0[10];
+	random(ar0, 10);
+	print(ar0, 10);
+	bubbleSort(ar0, 10);
+	print(ar0, 10);
+
 	std::cout << "Selection Sort" << std::endl;
 	int ar[10];
 	random(ar, 10);
@@ -25,6 +32,7 @@ int main(){
 	std::cout << std::endl;
 	countSort(bigAr, smallAr, 10000);
 	printSmallAr(smallAr);
+	
 	return 0;
 }
 
