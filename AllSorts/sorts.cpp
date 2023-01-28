@@ -36,7 +36,15 @@ void swap(int &a,int  &b){
 	b = temp;
 }
 
-
+void bubbleSort(int *ar, int size){
+	for(int i = 0; i < size - 1; i++){
+		for(int j = 0; j < size - i - 1; j++){
+			if(ar[j] > ar[j + 1]){
+				swap(ar[j], ar[j + 1]);
+			}
+		}
+	}
+}
 
 void selectionSort(int *ar, int size){
         for(int i = 0; i < size; i++){

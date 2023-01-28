@@ -19,6 +19,8 @@ void printBigAr(int*, int);
 
 void printSmallAr(int*);
 
+void bubbleSort(int*, int);
+
 void selectionSort(int*, int);
 
 void insertionSort(int*, int);
