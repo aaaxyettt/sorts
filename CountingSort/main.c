@@ -1,21 +1,25 @@
 #include <iostream>
 #include <time.h>
 
-
+//аналогичная этой функция есть в другом файле... надо переместить её туда..
 void randomFill(int *bigAr, int size, int min, int max){
 	srand(time(nullptr));
         for (int i = 0; i < size; i++){
-		int num = rand()%100;
+		int num = rand() % 100;
+
+		int rand = rand() % max + min;	//так надо.... и никаких if... else...
+
                 if (num <= max && num >= min){
 			bigAr[i] = num;
                 }
                 else{
-			i = i - 1;
+			i = i - 1;//очень оригинально.... и не понятно... и очень сложно....
+	
 		}
         }
 }
 
-
+//такая функция уже есть
 void printBigAr(int *bigAr, int size){
 	for(int i = 0; i < size; i++){
 		std::cout << bigAr[i] << "\t";
